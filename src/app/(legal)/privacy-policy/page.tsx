@@ -107,7 +107,7 @@ export default function PrivacyPolicy() {
           </ul>
           <p className="text-sm text-gray-600">
             <em>Të gjitha këto të dhëna ruhen vetëm në pajisjen tuaj mobile dhe 
-            nuk na dërgohen neve. Ju mund t'i fshini në çdo moment duke fshirë aplikacionin.</em>
+            nuk na dërgohen neve. Ju mund t&apos;i fshini në çdo moment duke fshirë aplikacionin.</em>
           </p>
         </section>
 

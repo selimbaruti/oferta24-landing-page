@@ -56,7 +56,7 @@ export function FAQs() {
           <AccordionTriggerFAQs>A është Oferta24 vetëm për supermarketet?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
             <p>
-              Për momentin, Oferta24 përfshin vetëm katalogët dhe ofertat nga supermarketet kryesore. Në të ardhmen do të shtohen edhe biznese të tjera si dyqane elektronike, produkte shtëpie, kozmetike dhe farmaci për t'i pasur të gjitha ofertat në një vend të vetëm.
+              Për momentin, Oferta24 përfshin vetëm katalogët dhe ofertat nga supermarketet kryesore. Në të ardhmen do të shtohen edhe biznese të tjera si dyqane elektronike, produkte shtëpie, kozmetike dhe farmaci për t&apos;i pasur të gjitha ofertat në një vend të vetëm.
             </p>
           </AccordionContentFAQs>
         </AccordionItemFAQs>
@@ -69,7 +69,7 @@ export function FAQs() {
         <AccordionItemFAQs value="shopping-list">
           <AccordionTriggerFAQs>Si funksionon lista e blerjeve?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
-            <p>Lista e blerjeve të lejon të ruash produktet që dëshiron të blesh dhe t'i organizosh sipas nevojave të tua. Mund ta përdorësh si një kujtes për blerjet e tua.</p>
+            <p>Lista e blerjeve të lejon të ruash produktet që dëshiron të blesh dhe t&apos;i organizosh sipas nevojave të tua. Mund ta përdorësh si një kujtes për blerjet e tua.</p>
           </AccordionContentFAQs>
         </AccordionItemFAQs>
         <AccordionItemFAQs value="future-features">
