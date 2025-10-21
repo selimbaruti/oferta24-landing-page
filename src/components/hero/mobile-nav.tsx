@@ -16,7 +16,7 @@ export function MobileNav({ items, className }: Props) {
   return (
     <nav className={cn("flex w-full max-w-7xl items-center justify-between gap-4", className)}>
       <Link href="/">
-        <Image src="/logo.svg" alt="logo" width={86} height={26} />
+        <Image src="/logo.svg" alt="logo" width={200} height={40} />
       </Link>
       <Drawer direction="top">
         <DrawerTrigger className="relative -m-2 cursor-pointer p-2">
@@ -26,7 +26,7 @@ export function MobileNav({ items, className }: Props) {
         <DrawerContent className="flex flex-col gap-4 p-8">
           <DrawerTitle className="sr-only">Menu</DrawerTitle>
           {items.map((item) => (
-            <Link key={item.href} href={item.href}>
+            <Link key={`mobile-${item.href}`} href={item.href}>
               {item.label}
             </Link>
           ))}

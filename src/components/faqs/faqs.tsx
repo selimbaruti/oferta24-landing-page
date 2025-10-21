@@ -1,8 +1,6 @@
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
 
 function AccordionItemFAQs(props: React.ComponentProps<typeof AccordionItem>) {
   return (
@@ -31,54 +29,58 @@ function AccordionContentFAQs(props: React.ComponentProps<typeof AccordionConten
 
 export function FAQs() {
   return (
-    <div className="mx-auto grid max-w-6xl gap-6 px-6 py-14 md:grid-cols-2 md:gap-14 md:px-10 md:py-25">
+    <div className="mx-auto grid max-w-6xl gap-6 px-6 py-14 md:grid-cols-2 md:gap-14 md:px-10 md:py-17">
       <div className="flex w-full flex-col gap-6">
         <Badge variant="secondary" className="mb-2 uppercase">
           FAQ
         </Badge>
         <h2 className="text-3xl leading-[1.1] font-medium tracking-tight sm:text-5xl">
-          Frequently
-          <br />
-          Asked <span className="text-muted-foreground">Questions</span>
+  Pyetje
+  <br />
+  <span className="text-muted-foreground">të shpeshta</span>
         </h2>
         <p className="max-w-lg text-xs leading-6 tracking-tight sm:text-base">
-          Get answers to commonly asked questions.
+            Gjej përgjigje për pyetjet që bëhen më shpesh.
         </p>
-        <Button className="w-fit" size="lg" asChild>
-          <Link href="/pricing">Get Started</Link>
-        </Button>
       </div>
       <Accordion type="single" collapsible defaultValue="branding" className="grid w-full gap-4">
         <AccordionItemFAQs value="branding">
-          <AccordionTriggerFAQs>Will my app show your branding anywhere?</AccordionTriggerFAQs>
+          <AccordionTriggerFAQs>Çfarë është Oferta24?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
             <p>
-              Never. Your app will be fully white-labeled with your own name, logo, and design. We stay completely
-              invisible.
+              Oferta24 është një platformë që të ndihmon të gjesh ofertat dhe katalogët më të fundit nga supermarketet në qytetin tënd.
             </p>
           </AccordionContentFAQs>
         </AccordionItemFAQs>
-        <AccordionItemFAQs value="skills">
-          <AccordionTriggerFAQs>Do I need technical skills to use Acme?</AccordionTriggerFAQs>
+        <AccordionItemFAQs value="supermarkets">
+          <AccordionTriggerFAQs>A është Oferta24 vetëm për supermarketet?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
             <p>
-              No. We handle all the technical setup for you. You can focus on your business while we handle the rest.
+              Për momentin, Oferta24 përfshin vetëm katalogët dhe ofertat nga supermarketet kryesore. Në të ardhmen do të shtohen edhe biznese të tjera si dyqane elektronike, produkte shtëpie, kozmetike dhe farmaci për t'i pasur të gjitha ofertat në një vend të vetëm.
             </p>
           </AccordionContentFAQs>
         </AccordionItemFAQs>
-        <AccordionItemFAQs value="devices">
-          <AccordionTriggerFAQs>Will my app work on all devices?</AccordionTriggerFAQs>
+        <AccordionItemFAQs value="search">
+          <AccordionTriggerFAQs>Si mund të kërkoj produkte ose kategori?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
-            <p>Yes. Our app is designed to work on all devices, including iOS and Android.</p>
+            <p>Mund të përdorësh fushën e kërkimit ose filtrat sipas kategorive për të gjetur produktet që të interesojnë.</p>
           </AccordionContentFAQs>
         </AccordionItemFAQs>
-        <AccordionItemFAQs value="notifcations">
-          <AccordionTriggerFAQs>Can I send notifications and updates to users?</AccordionTriggerFAQs>
+        <AccordionItemFAQs value="shopping-list">
+          <AccordionTriggerFAQs>Si funksionon lista e blerjeve?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
-            <p>Yes. You can send notifications and updates to users through our app.</p>
+            <p>Lista e blerjeve të lejon të ruash produktet që dëshiron të blesh dhe t'i organizosh sipas nevojave të tua. Mund ta përdorësh si një kujtes për blerjet e tua.</p>
+          </AccordionContentFAQs>
+        </AccordionItemFAQs>
+        <AccordionItemFAQs value="future-features">
+          <AccordionTriggerFAQs>A do të shtohen veçori të reja në të ardhmen?</AccordionTriggerFAQs>
+          <AccordionContentFAQs>
+            <p>Po, ekipi i Oferta24 po punon vazhdimisht për të shtuar funksione të reja që e bëjnë përvojën më të plotë dhe më të lehtë për përdoruesit.</p>
           </AccordionContentFAQs>
         </AccordionItemFAQs>
       </Accordion>
     </div>
   );
 }
+
+

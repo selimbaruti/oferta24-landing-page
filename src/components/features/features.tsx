@@ -1,7 +1,7 @@
 import { FeaturesCarousel } from "@/components/features/features-carousel";
 import { FeaturesTabs } from "@/components/features/features-tabs";
 import { Badge } from "@/components/ui/badge";
-import { ActivityIcon, ChartNoAxesColumnIcon, SlidersIcon, ZapIcon } from "lucide-react";
+import { Search,ListTodo, Scale, Heart } from "lucide-react";
 
 export type Feature = {
   icon: React.ReactNode;
@@ -12,28 +12,28 @@ export type Feature = {
 
 const features = [
   {
-    icon: <SlidersIcon size={20} />,
-    title: "Full Brand Control",
-    description: "Make it yours—customize logos, colors, domains, and more.",
-    image: "/app-image-1.png",
+    icon: <Search size={20} />,
+    title: "Kërko sipas kategorisë",
+    description: "Gjej ofertat që kanë vërtet rëndësi për ty.",
+    image: "/app-image-4.png",
   },
   {
-    icon: <ZapIcon size={20} />,
-    title: "Fast, Native Performance",
-    description: "Built with native tech for fast, smooth performance.",
-    image: "/app-image-1.png",
+    icon: <ListTodo size={20} />,
+    title: "Lista e blerjeve",
+    description: "Krijo dhe menaxho lehtë listën tënde të blerjeve.",
+    image: "/shoppinglist.png",
   },
   {
-    icon: <ActivityIcon size={20} />,
-    title: "Push Notifications",
-    description: "Engage users with real-time updates and alerts.",
-    image: "/app-image-1.png",
+    icon: <Scale size={20} />,
+    title: "Krahasimi i çmimeve",
+    description: "Krahason çmimet e të njëjtit produkt midis supermarketeve.",
+    image: "/krahasimi.png",
   },
   {
-    icon: <ChartNoAxesColumnIcon size={20} />,
-    title: "Built-in Analytics",
-    description: "Monitor activity and performance with live data.",
-    image: "/app-image-1.png",
+    icon: <Heart size={20} />,
+    title: "Katalogë të preferuar",
+    description: "Ruaj katalogët që të pëlqejnë për t'u kthyer tek ata më vonë.",
+    image: "/favorites.png",
   },
 ] satisfies Feature[];
 
@@ -44,11 +44,10 @@ export function Features() {
         Features
       </Badge>
       <h2 className="text-center text-3xl leading-[1.1] font-medium tracking-tight sm:text-5xl">
-        Discover our<div className="text-muted-foreground">exceptional features</div>
+        Zbulo funksionet <div className="text-muted-foreground">që na veçojnë</div>
       </h2>
       <p className="mb-3 max-w-lg text-center leading-6 tracking-tight sm:text-xl lg:mb-8">
-        We&apos;ve built the ultimate white-label app platform so you can focus on growing your brand - not building
-        tech
+        Ne kemi ndërtuar aplikacionin që bashkon të gjitha ofertat dhe katalogët javorë në një vend, për ta bërë kursimin më të lehtë se kurrë.
       </p>
       <FeaturesCarousel features={features} className="block lg:hidden" />
       <FeaturesTabs features={features} className="hidden lg:block" />

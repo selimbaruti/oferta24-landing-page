@@ -9,8 +9,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Paddle Web Payments Starter",
-  description: "A vercel template for taking web payments for mobile apps with Paddle",
+  title: "Oferta24",
+  description: "Shfleto katalogët javorë, krahaso çmimet dhe gjej ofertat më pranë teje.",
 };
 
 export default function RootLayout({
