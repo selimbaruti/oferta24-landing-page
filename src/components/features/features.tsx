@@ -41,7 +41,7 @@ export function Features() {
   return (
     <div id="features" className="flex w-full flex-col items-center gap-6 px-6 py-14 md:px-10 md:py-25">
       <Badge variant="secondary" className="uppercase">
-        Features
+        Veçoritë
       </Badge>
       <h2 className="text-center text-3xl leading-[1.1] font-medium tracking-tight sm:text-5xl">
         Zbulo funksionet <div className="text-muted-foreground">që na veçojnë</div>
