@@ -12,7 +12,7 @@ export default function TermsAndConditions() {
       
       <div className="prose prose-lg mx-auto">
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold mb-4">1. Pranmi i kushteve</h2>
+          <h2 className="text-2xl font-semibold mb-4">1. Pranimi i kushteve</h2>
           <p className="mb-4">
             Duke përdorur aplikacionin Oferta24, ju pranoni të përmbaheni nga këto kushte dhe kushtet e përdorimit. 
             Nëse nuk pajtoheni me ndonjë nga këto kushte, ju lutem mos përdorni shërbimin tonë.
