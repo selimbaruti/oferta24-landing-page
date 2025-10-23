@@ -7,12 +7,12 @@ const links = [
     links: [
       {
         label: "Për Android",
-        href: "https://play.google.com/store",
+        href: "https://play.google.com/store/apps/details?id=com.oferta24al",
         title: "Shkarko për Android",
       },
       {
         label: "Për iPhone",
-        href: "https://apps.apple.com/",
+        href: "https://apps.apple.com/al/app/oferta24/id6749228151",
         title: "Shkarko për iOS",
       },
     ],
